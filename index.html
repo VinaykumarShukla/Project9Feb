@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+
+    <style>
+        .box {
+            background-color: red;
+            color: white;
+            font-size: 50px;
+            display: none;
+            text-align: center;
+            height: 100vh;
+        }
+
+        @media screen and (max-width:424px){
+            #box-1 {
+                display: block;
+                background-color: aqua;
+            }
+        }
+
+        @media screen and (min-width: 425px) and (max-width: 767px){
+            #box-2 {
+                display: block;
+                background-color:cornflowerblue;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            #box-3 {
+                display: block;
+                background-color:crimson;
+            }
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1439px){
+            #box-4 {
+                display: block;
+                background-color: brown;
+            }
+        }
+
+        @media screen and (min-width: 1440px) {
+            #box-5 {
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+</head>
+<body>
+    <div class="box" id="box-1">This is a Media Query Demo Page.</div>
+    <div class="box" id="box-2">Screen Size:425px</div>
+    <div class="box" id="box-3">Screen Size:768px</div>
+    <div class="box" id="box-4">Screen Size:1024px</div>
+    <div class="box" id="box-5">This is a Media Query Demo Page.
+     <br>   Screen Size:1440px</div>
+
+</body>
+</html>
